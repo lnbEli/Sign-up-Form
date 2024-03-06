@@ -133,11 +133,6 @@ table {
   src: url(./BeautifulPeoplePersonalUse-dE0g.ttf);
 }
 
-h1 {
-  font-family: "my-cool-font";
-  color: brown;
-}
-
 body {
   background-color: black;
   display: flex;
@@ -164,15 +159,71 @@ body {
 .form-column-right {
   background-color: rgb(252, 248, 248);
   flex: 1.9;
+  display: flex;
+  flex-direction: column;
+  /* border: solid red 2px; */
 }
 
 .logo-banner {
   height: 20%;
-  background-color: rgba(7, 7, 7, 0.3);
+  background-color: rgba(7, 7, 7, 0.5);
   position: relative;
   top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-image {
-  fill: #ff0000;
+  filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(99deg) brightness(111%)
+    contrast(100%);
+  width: 200px;
+  height: 75px;
+}
+
+.form-heading,
+.form-body,
+.form-footer {
+  border: solid 2px rgb(169, 169, 172);
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 45px;
+}
+
+.form-heading h1 {
+  font-family: "my-cool-font";
+  color: black;
+  font-size: 18px;
+  line-height: 1.2em;
+  max-width: 25vw;
+}
+
+legend {
+  padding: 20px 0;
+}
+fieldset {
+  border: 0;
+}
+
+label > span {
+  display: block;
+  text-align: left;
+}
+
+form[id="myform"] > fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  /* border: 2px solid red; */
+}
+
+p {
+  padding: 10px 30px 15px 0px;
+  flex-basis: 40%;
+}
+
+input {
+  max-width: 180px;
 }
