@@ -34,3 +34,30 @@ function toggleClass(item) {
     span.classList.remove("required");
   }
 }
+
+// Add event listeners to password inputs that only allow css tick boxes if both inputs the same
+let passwordOne = document.querySelector("#pass1");
+let passwordTwo = document.querySelector("#pass2");
+
+passwordTwo.addEventListener("input", () => {
+  toggleClassTwo(passwordTwo);
+  toggleClassTwo(passwordOne);
+});
+
+passwordOne.addEventListener("input", () => {
+  toggleClassTwo(passwordOne);
+  toggleClassTwo(passwordTwo);
+});
+
+function toggleClassTwo(item) {
+  const span = item.nextElementSibling;
+  if (
+    passwordOne.value === passwordTwo.value &&
+    item.value.length > 0 &&
+    !span.classList.contains("required")
+  ) {
+    span.classList.add("required");
+  } else {
+    span.classList.remove("required");
+  }
+}
