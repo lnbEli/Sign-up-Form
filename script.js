@@ -1,8 +1,8 @@
 const btn = document.querySelector(".btn");
-
 //event listner to check that both passport values are equal and if not highlight and message user.
 
 btn.addEventListener("click", (e) => {
+  const warningMsg = document.querySelector(".warning-msg");
   let passwordOne = document.querySelector("#pass1");
   let passwordTwo = document.querySelector("#pass2");
 
@@ -10,9 +10,11 @@ btn.addEventListener("click", (e) => {
     e.preventDefault();
     passwordOne.classList.add("error");
     passwordTwo.classList.add("error");
+    warningMsg.hidden = false;
   } else {
     passwordOne.classList.remove("error");
     passwordTwo.classList.remove("error");
+    warningMsg.hidden = true;
   }
 });
 
@@ -57,7 +59,9 @@ function toggleClassTwo(item) {
     !span.classList.contains("required")
   ) {
     span.classList.add("required");
+    item.classList.remove("error");
   } else {
     span.classList.remove("required");
+    item.classList.remove("error");
   }
 }

@@ -142,7 +142,7 @@ body {
 .main-body {
   background-color: white;
   width: 67%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
 }
 
@@ -150,9 +150,8 @@ body {
   background-color: rgb(244, 226, 229);
   flex: 1.1;
   background-image: url(./rishu-bhosale-ms-HZqv5i08-unsplash.jpg);
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-position: center;
+  /* background-size: auto; */
   background-size: cover;
 }
 
@@ -188,8 +187,17 @@ body {
   flex: 1;
   display: flex;
   justify-content: flex-start;
+}
+
+.form-heading,
+.form-body {
   align-items: center;
   padding: 45px;
+}
+
+.form-footer {
+  align-items: flex-start;
+  padding: 15px 45px;
 }
 
 .form-heading h1 {
@@ -282,4 +290,21 @@ input + span[class="required"]::before {
 input:valid + span[class="required"]::before {
   content: "✓";
   color: green;
+}
+
+input[type="submit"] {
+  padding: 3px 35px;
+  align-self: flex-start;
+  background-color: rgb(55, 101, 86);
+  color: white;
+  font-family: "my-cool-font";
+  border-radius: 6px;
+  box-shadow: 0.3px 0.3px 8px #909294;
+}
+
+p[class="warning-msg"] {
+  color: rgb(219, 56, 41);
+  font-family: "my-cool-font";
+  font-size: 12px;
+  line-height: 1.2em;
 }
