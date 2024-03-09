@@ -139,12 +139,12 @@ body {
   justify-content: center;
 }
 
-.main-body {
+/* .main-body {
   background-color: white;
   width: 67%;
   height: 100vh;
   display: flex;
-}
+} */
 
 .photo-column-left {
   background-color: rgb(244, 226, 229);
@@ -156,6 +156,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-items: flex-end;
+  border-left: 12vw solid black;
 }
 
 .photo-column-left > p {
@@ -172,7 +173,7 @@ body {
   flex: 1.9;
   display: flex;
   flex-direction: column;
-  /* border: solid red 2px; */
+  border-right: 12vw solid black;
 }
 
 .logo-banner {
