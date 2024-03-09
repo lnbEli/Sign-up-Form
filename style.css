@@ -142,7 +142,7 @@ body {
 .main-body {
   background-color: white;
   width: 67%;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
 }
 
@@ -215,7 +215,7 @@ body {
 
 .form-footer {
   align-items: flex-start;
-  padding: 15px 45px;
+  padding: 35px 45px;
   /* border-top: solid 2px rgb(169, 169, 172); */
   box-shadow: inset -4px 0px 25px -6px rgba(0, 0, 0, 0.4);
 }
@@ -350,5 +350,9 @@ p[class="warning-msg"] {
 
 p > a {
   padding-left: 6px;
-  color: blue;
+  color: rgb(241, 241, 247);
+}
+
+p[class="logIn"] > a {
+  color: rgb(55, 101, 86);
 }
