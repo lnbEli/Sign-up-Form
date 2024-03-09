@@ -8,13 +8,18 @@
   </head>
   <body>
     <div class="main-body">
-      <div class="photo-column-left">
+      <section class="photo-column-left">
         <div class="logo-banner">
           <img src="./fig_one_rev2.svg" alt="dog logo" class="logo-image" />
         </div>
-      </div>
+        <p>
+          Photo by
+          <a href="https://unsplash.com/@rishu_bhosale">Rishu Bhosale</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
+        </p>
+      </section>
       <div class="form-column-right">
-        <div class="form-heading">
+        <section class="form-heading">
           <h1>
             At pampered pets we believe in a bespoke service catered to each and
             every animal. Sign up now for access to our custom package creator.
@@ -22,8 +27,8 @@
             <br />
             We can't wait to hear from you!
           </h1>
-        </div>
-        <div class="form-body">
+        </section>
+        <section class="form-body">
           <form action="" method="get" id="myform">
             <fieldset>
               <legend>
@@ -85,17 +90,25 @@
               <p class="warning-msg" hidden>Please enter matching passwords!</p>
             </fieldset>
           </form>
-        </div>
-        <div class="form-footer">
-          <input
-            type="submit"
-            id="submit"
-            form="myform"
-            value="Create Account"
-            class="btn"
-            required
-          />
-        </div>
+        </section>
+        <section class="form-footer">
+          <div class="form-footer-section">
+            <input
+              type="submit"
+              id="submit"
+              form="myform"
+              value="Create Account"
+              class="btn"
+              required
+            />
+            <p class="logIn">
+              Already have an account<a
+                href="https://developer.mozilla.org/en-US/"
+                >Log in</a
+              >
+            </p>
+          </div>
+        </section>
       </div>
     </div>
     <script src="script.js"></script>

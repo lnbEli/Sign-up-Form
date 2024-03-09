@@ -153,6 +153,18 @@ body {
   background-position: center;
   /* background-size: auto; */
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+}
+
+.photo-column-left > p {
+  align-self: center;
+  color: white;
+  position: relative;
+  top: 75%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
 }
 
 .form-column-right {
@@ -183,21 +195,29 @@ body {
 .form-heading,
 .form-body,
 .form-footer {
-  border: solid 2px rgb(169, 169, 172);
+  /* border: solid 2px rgb(169, 169, 172); */
   flex: 1;
   display: flex;
   justify-content: flex-start;
 }
 
+.form-heading {
+  background-color: #f6f9f9ce;
+  padding: 45px;
+  box-shadow: inset -4px 0px 25px -6px rgba(0, 0, 0, 0.4);
+}
+
 .form-heading,
 .form-body {
   align-items: center;
-  padding: 45px;
+  padding: 20px 45px;
 }
 
 .form-footer {
   align-items: flex-start;
   padding: 15px 45px;
+  /* border-top: solid 2px rgb(169, 169, 172); */
+  box-shadow: inset -4px 0px 25px -6px rgba(0, 0, 0, 0.4);
 }
 
 .form-heading h1 {
@@ -209,7 +229,7 @@ body {
 }
 
 legend {
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 fieldset {
   border: 0;
@@ -230,7 +250,7 @@ form[id="myform"] > fieldset {
   /* border: 2px solid red; */
 }
 
-p {
+fieldset > p {
   padding: 10px 30px 0px 0px;
   flex-basis: 40%;
 }
@@ -279,6 +299,7 @@ legend > p {
   font-family: Arial, Helvetica, sans-serif;
   /* display: inline-block; */
   font-size: x-small;
+  padding-top: 8px;
 }
 
 input + span[class="required"]::before {
@@ -304,7 +325,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   border: 1px solid rgb(58, 57, 57);
-  box-shadow: 0px 0px 26px 8px;
+  box-shadow: 0px 0px 16px 8px;
   cursor: pointer;
 }
 
@@ -313,4 +334,21 @@ p[class="warning-msg"] {
   font-family: "my-cool-font";
   font-size: 12px;
   line-height: 1.2em;
+}
+
+.form-footer-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logIn {
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+p > a {
+  padding-left: 6px;
+  color: blue;
 }
